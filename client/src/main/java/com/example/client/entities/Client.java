@@ -14,6 +14,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Client {
 
+    public Client(Long id, String nom, Float age) {
+        this.id = id;
+        this.nom = nom;
+        this.age = age;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
